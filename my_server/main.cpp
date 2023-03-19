@@ -130,8 +130,8 @@ DWORD WINAPI accept_request(LPVOID arg) {
 	while (!isspace(buff[j]) && i < sizeof(url) - 1 && j < sizeof(buff)) {
 		url[i++] = buff[j++];
 	}
-	//url[i] = 0;
-	//PRINTF(url);
+	url[i] = 0;
+	PRINTF(url);
 
 
 	return 0;
